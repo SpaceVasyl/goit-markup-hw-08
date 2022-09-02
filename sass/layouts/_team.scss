@@ -1,0 +1,86 @@
+.team {
+    background-color: var(--section-color-grey);
+    padding: 94px 0;
+
+    &__head {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.16;
+            text-align: center;
+        }
+    
+    &__page {
+        font-size: 16px;
+        line-height: 1.18;
+        text-align: center;
+        color: var(--second-text-color-grey);
+        }
+    &__title {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: calc(19px / 16px);
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+
+.fourth-list-flex {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.card-list {
+    background-color: var(--color-white);
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.cards-employers {
+    padding: 30px 32px;
+}
+
+
+
+
+
+.soshial-icons {
+    display: flex;
+    margin-top: 16px;
+    gap: 10px;
+}
+
+.insta {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.insta-icon {
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.insta:hover,
+.insta:focus {
+    background-color: var(--accent-color);
+    border-radius: 50%;
+}
+
+.insta:hover .insta-icon,
+.insta:focus .insta-icon {
+    fill: var(--color-white);
+}
+

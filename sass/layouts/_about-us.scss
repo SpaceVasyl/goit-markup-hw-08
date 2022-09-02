@@ -1,0 +1,42 @@
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.about {
+    display: flex;
+    text-align: left;
+    gap: 30px;
+}
+
+.icon {
+    background-color: var(--section-color-grey);
+    border-radius: 4px;
+    padding: 25px 100px;
+}
+
+.about__icon {
+    width: 70px;
+    height: 70px;
+}
+
+.about__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.about__text {
+    color: var(--second-text-color-grey)
+}
