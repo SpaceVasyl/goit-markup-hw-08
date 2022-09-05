@@ -405,36 +405,36 @@
     <div class="background-gradient is-hidden" data-modal>
         <div class="modal">
             <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
-            <form class="form-modal">
+            <form class="form">
                 <div class="lable-div">
-                    <label for="name" class="lable">Ім'я</label>
-                    <input type="text" name="user-name" class="modal-inp" id="name" required>
+                    <label for="name" class="modal__lable">Ім'я</label>
+                    <input type="text" name="user-name" class="modal__inp" id="name" required>
                     <svg class="input-icon-name foc">
                         <use href="./images/sprites.svg#icon-name"></use>
                     </svg>
                 </div>
                 <div class="lable-div">
-                    <label for="tel" class="lable">Телефон</label>
-                    <input type="tel" name="phone" class="modal-inp" id="tel" required>
+                    <label for="tel" class="modal__lable">Телефон</label>
+                    <input type="tel" name="phone" class="modal__inp" id="tel" required>
                     <svg class="input-icon-phone foc">
                         <use href="./images/sprites.svg#icon-phone-cell"></use>
                     </svg>
                 </div>
                 <div class="lable-div">
-                    <label for="email" class="lable">Пошта</label>
-                    <input type="email" name="email" class="modal-inp" id="email">
+                    <label for="email" class="modal__lable">Пошта</label>
+                    <input type="email" name="email" class="modal__inp" id="email">
                     <svg class="input-icon-mail foc">
                         <use href="./images/sprites.svg#icon-email"></use>
                     </svg>
                 </div>
-                <label for="text-ar" class="lable">Комментар</label>
-                <textarea class="modal-comm" name="commen" id="text-ar" placeholder="Введіть текст">
+                <label for="text-ar" class="modal__lable">Комментар</label>
+                <textarea class="modal__comm" name="commen" id="text-ar" placeholder="Введіть текст">
                     </textarea>
 
-                <div class="terms-of-conditions">
+                <div class="terms-conditions">
                     <input type="checkbox" id="boolean-bird" name="agree" checked class="check-mod hidden" />
                     <label for="boolean-bird" class="lable-check">
-                        Погоджуюся з розсилкою та приймаю <a href="#" class="terms-conditions"> Умови договору</a>
+                        Погоджуюся з розсилкою та приймаю <a href="#" class="agreement"> Умови договору</a>
                     </label>
                 </div>
                 <div class="justify">
@@ -443,8 +443,8 @@
             </form>
 
 
-            <button type="button" class="close-modal" data-modal-close>
-                <svg class="team__icon close-icon-color">
+            <button type="button" class="close-button" data-modal-close>
+                <svg class="modal__close modal__close--color">
                     <use href="./images/sprites.svg#icon-kross"></use>
                 </svg>
             </button>
