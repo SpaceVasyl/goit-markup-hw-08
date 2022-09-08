@@ -17,34 +17,34 @@
 <body>
     <header class="header">
         <!--Логотип-->
-        <div class="conteiner header-box">
-            <a href="index.html" class="logo un-underline"><span class="blue">Web</span>Studio</a>
-            <nav class="header--position">
+        <div class="header-box">
+            <a href="index.html" class="logo"><span class="logo__part--blue">Web</span>Studio</a>
+            <nav class="navigation">
                 <!--Посилання в шапці сторінки-->
-                <ul class="list navig-list">
-                    <li class="position">
-                        <a href="./index.html" class="link un-underline hatpage ">Студія</a>
+                <ul class="navig-list">
+                    <li class="header__position">
+                        <a href="./index.html" class="header__page">Студія</a>
                     </li>
-                    <li class="position">
-                        <a href="./portfolio.html" class="link un-underline hatpage active">Портфоліо</a>
+                    <li class="header__position">
+                        <a href="./portfolio.html" class="header__page">Портфоліо</a>
                     </li>
-                    <li class="position">
-                        <a href="#" class="link un-underline hatpage">Контакти</a>
+                    <li class="header__position">
+                        <a href="#" class="header__page">Контакти</a>
                     </li>
                 </ul>
             </nav>
-            <ul class="list adress-list">
-                <li class="flex-header">
-                    <a href="mailto:info@devstudio.com" class="un-underline cont">
-                        <svg class="convert-icon">
+            <ul class="adress-list">
+                <li class="mail">
+                    <a href="mailto:info@devstudio.com" class="header__contact">
+                        <svg class="header__icon">
                             <use href="./images/sprites.svg#icon-convert"></use>
                         </svg>
                         info@devstudio.com
                     </a>
                 </li>
-                <li class="flex-header">
-                    <a href="tel:+380961111111" class="un-underline cont">
-                        <svg class="phone-icon">
+                <li class="phone">
+                    <a href="tel:+380961111111" class="header__contact">
+                        <svg class="header__icon">
                             <use href="./images/sprites.svg#icon-phone"></use>
                         </svg>
                         +38 096 111 11 11
@@ -54,135 +54,135 @@
         </div>
     </header>
     <main>
-        <div class="conteiner catalog">
-            <section class="section first-sec">
+        <div class="catalog">
+            <section class="buttons-section">
             <h1 class="hidden">Портфоліо</h1>
             <!-- Кнопки в першій секції -->
-            <ul class="list portfolio-buttons"> 
-                <li><button type="button" class="alpaka">Усі</button></li>
-                <li><button type="button" class="alpaka">Веб-сайти</button></li>
-                <li><button type="button" class="alpaka">Додатки</button></li>
-                <li><button type="button" class="alpaka">Дизайн</button></li>
-                <li><button type="button" class="alpaka">Маркетинг</button></li>
+            <ul class="portfolio-buttons"> 
+                <li><button type="button" class="catalog__button">Усі</button></li>
+                <li><button type="button" class="catalog__button">Веб-сайти</button></li>
+                <li><button type="button" class="catalog__button">Додатки</button></li>
+                <li><button type="button" class="catalog__button">Дизайн</button></li>
+                <li><button type="button" class="catalog__button">Маркетинг</button></li>
             </ul>
-            <ul class="list projects-list">
+            <ul class="projects">
                 <!-- Проекти- фотопосилання -->
-                <li class="borderline">
-                    <a href="#" class="un-underline">
-                        <div class="card-im-anim">
+                <li class="card">
+                    <a href="#" class="catalog__card">
+                        <div class="catalog__animation">
                         <img src="./images/img-icons.jpg" alt="Технокряк" width="370" height="294">
-                        <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                        <p class="catalog__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                         вичерпні відомості про компанію чи приватну особу.</p>
                         </div>
-                        <div class="cards-commertials">
-                            <h2 class="section-two-head">Технокряк</h2>
-                            <p class="section-two-string">Веб-сайт</p>
+                        <div class="catalog__subscribe">
+                            <h2 class="catalog__title">Технокряк</h2>
+                            <p class="catalog__type">Веб-сайт</p>
                         </div>
                     </a>
                 </li>
-                <li class="borderline">
-                    <a href="#" class="un-underline">
-                        <div class="card-im-anim">
+                <li class="card">
+                    <a href="#" class="catalog__card">
+                        <div class="catalog__animation">
                         <img src="./images/img-lebronn.jpg" alt="Постер New Orlean vs Golden Star" width="370" height="294">
-                        <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                        <p class="catalog__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                             відвідувачу отримати
                             вичерпні відомості про компанію чи приватну особу.</p>
                         </div>
-                        <div class="cards-commertials">
-                            <h2 class="section-two-head">Постер New Orlean vs Golden Star</h2>
-                            <p class="section-two-string">Дизайн</p>
+                        <div class="catalog__subscribe">
+                            <h2 class="catalog__title">Постер New Orlean vs Golden Star</h2>
+                            <p class="catalog__type">Дизайн</p>
                         </div>
                     </a>
                 </li>
-                <li class="borderline">
-                    <a href="#" class="un-underline">
-                         <div class="card-im-anim">
+                <li class="card">
+                    <a href="#" class="catalog__card">
+                         <div class="catalog__animation">
                         <img src="./images/img-fish.jpg" alt="Ресторан Seafood" width="370" height="294">
-                        <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                        <p class="catalog__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                         вичерпні відомості про компанію чи приватну особу.</p>
                         </div>
-                        <div class="cards-commertials">
-                            <h2 class="section-two-head">Ресторан Seafood</h2>
-                            <p class="section-two-string">Додаток</p>
+                        <div class="catalog__subscribe">
+                            <h2 class="catalog__title">Ресторан Seafood</h2>
+                            <p class="catalog__type">Додаток</p>
                         </div>
                     </a>
                 </li>
-                <li class="borderline">
-                    <a href="#" class="un-underline">
-                         <div class="card-im-anim">
+                <li class="card">
+                    <a href="#" class="catalog__card">
+                         <div class="catalog__animation">
                         <img src="./images/img-headphones.jpg" alt="Проєкт Prime" width="370" height="294">
-                        <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                        <p class="catalog__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                             відвідувачу отримати
                             вичерпні відомості про компанію чи приватну особу.</p>
                         </div>
-                        <div class="cards-commertials">
-                            <h2 class="section-two-head">Проєкт Prime</h2>
-                            <p class="section-two-string">Маркетинг</p>
+                        <div class="catalog__subscribe">
+                            <h2 class="catalog__title">Проєкт Prime</h2>
+                            <p class="catalog__type">Маркетинг</p>
                         </div>
                     </a>
                 </li>
-                <li class="borderline">
-                    <a href="#" class="un-underline">
-                         <div class="card-im-anim">
+                <li class="card">
+                    <a href="#" class="catalog__card">
+                         <div class="catalog__animation">
                         <img src="./images/img-boxes.jpg" alt="Проєкт Boxes" width="370" height="294">
-                       <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                       <p class="catalog__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                         вичерпні відомості про компанію чи приватну особу.</p>
                         </div>
-                        <div class="cards-commertials">
-                        <h2 class="section-two-head">Проєкт Boxes</h2>
-                        <p class="section-two-string">Додаток</p>
+                        <div class="catalog__subscribe">
+                        <h2 class="catalog__title">Проєкт Boxes</h2>
+                        <p class="catalog__type">Додаток</p>
                         </div>
                     </a>
                 </li>
-                <li class="borderline">
-                    <a href="#" class="un-underline">
-                         <div class="card-im-anim">
+                <li class="card">
+                    <a href="#" class="catalog__card">
+                         <div class="catalog__animation">
                         <img src="./images/img-screen.jpg" alt="Inspiration has no Borders" width="370" height="294">
-                        <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                        <p class="catalog__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                         вичерпні відомості про компанію чи приватну особу.</p>
                         </div>
-                        <div class="cards-commertials">
-                        <h2 class="section-two-head">Inspiration has no Borders</h2>
-                        <p class="section-two-string">Веб-сайт</p>
+                        <div class="catalog__subscribe">
+                        <h2 class="catalog__title">Inspiration has no Borders</h2>
+                        <p class="catalog__type">Веб-сайт</p>
                     </div>
                     </a>
                 </li>
-                <li class="borderline">
-                    <a href="#" class="un-underline">
-                         <div class="card-im-anim">
+                <li class="card">
+                    <a href="#" class="catalog__card">
+                         <div class="catalog__animation">
                         <img src="./images/img-magaz.jpg" alt="Видання Limited Edition" width="370" height="294">
-                       <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                       <p class="catalog__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                         вичерпні відомості про компанію чи приватну особу.</p>
                         </div>
-                        <div class="cards-commertials">
-                            <h2 class="section-two-head">Видання Limited Edition</h2>
-                            <p class="section-two-string">Дизайн</p>
+                        <div class="catalog__subscribe">
+                            <h2 class="catalog__title">Видання Limited Edition</h2>
+                            <p class="catalog__type">Дизайн</p>
                         </div>
                     </a>
                 </li>
-                <li class="borderline">
-                    <a href="#" class="un-underline">
-                         <div class="card-im-anim">
+                <li class="card">
+                    <a href="#" class="catalog__card">
+                         <div class="catalog__animation">
                         <img src="./images/img-lable.jpg" alt="Проєкт LAB" width="370" height="294">
-                        <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                        <p class="catalog__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                         вичерпні відомості про компанію чи приватну особу.</p>
                         </div>
-                        <div class="cards-commertials">
-                        <h2 class="section-two-head">Проєкт LAB</h2>
-                        <p class="section-two-string">Маркетинг</p>
+                        <div class="catalog__subscribe">
+                        <h2 class="catalog__title">Проєкт LAB</h2>
+                        <p class="catalog__type">Маркетинг</p>
                         </div>
                     </a>
                 </li>
-                <li class="borderline">
-                    <a href="#" class="un-underline">
-                         <div class="card-im-anim">
+                <li class="card">
+                    <a href="#" class="catalog__card">
+                         <div class="catalog__animation">
                         <img src="./images/img-laptop.jpg" alt="Growing Business" width="370" height="294">
-                        <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                        <p class="catalog__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                         вичерпні відомості про компанію чи приватну особу.</p>
                         </div>
-                        <div class="cards-commertials">
-                        <h2 class="section-two-head">Growing Business</h2>
-                        <p class="section-two-string">Додаток</p>
+                        <div class="catalog__subscribe">
+                        <h2 class="catalog__title">Growing Business</h2>
+                        <p class="catalog__type">Додаток</p>
                         </div>
                     </a>
                 </li>
@@ -190,74 +190,71 @@
             </section>
         </div>
     </main>
-    <footer class="footer-background footer-positioning">
+    <footer class="footer">
         <!--Нижня частина сторінки-->
-        <div class="conteiner flex">
-    
-            <div class="foot-orig">
-                <a class="logo un-underline logo-footer" href="index.html"><span class="blue">Web</span><span
-                        class="logo-white">Studio</span></a>
-                <address class="footer-item">
-                    <ul class="list footer-list">
-                        <li class="footer-cont">
-                            <a href="https://bit.ly/3pXMvUd" class="un-underline address footer-cont">м. Київ, пр-т Лесі
+        <div class="conteiner">
+            <div class="footer-orig">
+                <a href="index.html" class="logo logo-white"><span class="logo__part--blue">Web</span>Studio</a>
+                <address class="adress">
+                    <ul class="footer__list">
+                        <li class="footer__contact">
+                            <a href="https://bit.ly/3pXMvUd" class="footer__address">м. Київ, пр-т Лесі
                                 Українки, 26</a>
                         </li>
-                        <li class="footer-contakts footer-cont">
-                            <a href="mailto:info@devstudio.com" class="un-underline footer-cont">info@devstudio.com</a>
+                        <li class="footer__contact">
+                            <a href="mailto:info@devstudio.com" class="footer__address">info@devstudio.com</a>
                         </li>
-                        <li class="footer-cont">
-                            <a href="tel:+380961111111" class="un-underline footer-cont">+38 096 111 11 11</a>
+                        <li class="footer__contact">
+                            <a href="tel:+380961111111" class="footer__address">+38 096 111 11 11</a>
                         </li>
                     </ul>
                 </address>
             </div>
             <div class="foot-new">
-                <h3 class="join">Приєднуйтесь</h3>
-                <ul class="soshial-icons-foot list ">
+                <h3 class="footer__title">Приєднуйтесь</h3>
+                <ul class="soshial-icons list">
                     <li>
-                        <a href="#" class="insta round">
-                            <svg class="insta-icon icons-color">
+                        <a href="#" class="social-media">
+                            <svg class="footer__icon">
                                 <use href="./images/sprites.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="insta round">
-                            <svg class="insta-icon icons-color">
+                        <a href="#" class="social-media">
+                            <svg class="footer__icon">
                                 <use href="./images/sprites.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="insta round">
-                            <svg class="insta-icon icons-color">
+                        <a href="#" class="social-media">
+                            <svg class="footer__icon">
                                 <use href="./images/sprites.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="insta round">
-                            <svg class="insta-icon icons-color">
+                        <a href="#" class="social-media">
+                            <svg class="footer__icon">
                                 <use href="./images/sprites.svg#icon-linkedin"></use>
                             </svg>
                         </a>
                     </li>
                 </ul>
             </div>
-            <div class="foot-new subscribe">
-                <h3 class="join subscribe-head">Підпишіться на розсилку</h3>
+            <div class="subscribe">
+                <h3 class="footer__subscribe-title">Підпишіться на розсилку</h3>
                 <div class="formation">
-                    <input type="email" name="email-subs" class="subscribe-input" id="sub-email" placeholder="E-mail">
-                    <button type="submit" class="subscribe-button">Підписатися
-                        <svg class=" icons-color telegram">
+                    <input type="email" name="email-subs" class="footer__input" id="sub-email" placeholder="E-mail">
+                    <button type="submit" class="button-kn">Підписатися
+                        <svg class="icons-color telegram">
                             <use href="./images/sprites.svg#icon-telegram"></use>
                         </svg>
                     </button>
                 </div>
             </div>
         </div>
-    
     </footer>
 </body>
 </html>
