@@ -40,14 +40,11 @@ button {
 
 a {
   color: currentColor;
+  text-decoration: none;
 }
 
 address {
   font-style: normal;
-}
-
-.decoration {
-  text-decoration: none;
 }
 
 .list {
@@ -65,8 +62,8 @@ html {
 }
 
 body {
-  background-color: var(--main-color);
-  color: var(--primary-text-color);
+  background-color: #fff;
+  color: rgb(33, 33, 33);
   font-weight: 400;
   font-style: normal;
   font-family: "Roboto", sans-serif;
@@ -91,11 +88,21 @@ body {
 
 .header {
   background-color: rgb(255, 255, 255);
+  padding: 16px 15px;
 }
 
 .logo {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.1666666667;
+  text-decoration: none;
+}
+.logo__part--blue {
+  color: #2196F3;
+}
+
+.navigation__item::marker {
+  color: #2196F3;
+  font-weight: 900;
 }/*# sourceMappingURL=main.css.map */
