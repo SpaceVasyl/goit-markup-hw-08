@@ -81,4 +81,14 @@
       <path fill="#2196f3" style="fill: var(--color1, #2196f3)" d="M4.267 0h25.6c2.356 0 4.267 1.91 4.267 4.267v23.467c0 2.356-1.91 4.267-4.267 4.267h-25.6c-2.356 0-4.267-1.91-4.267-4.267v-23.467c0-2.356 1.91-4.267 4.267-4.267z"></path>
       <path fill="#fff" style="fill: var(--color2, #fff); stroke: var(--color2, #fff)" stroke="#fff" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.4267" d="M8.442 16.537l-0.147-0.14-2.205 2.088 7.767 7.41 16.318-15.567-2.19-2.089-14.128 13.465-5.416-5.167z"></path>
     </symbol>
+    <svg width="0" height="0" class="hidden">
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 16" id="sendvich">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.667V0h24v2.667H0Zm0 6.666h24V6.667H0v2.666ZM0 16h24v-2.667H0V16Z" fill="#000"></path>
+  </symbol>
+</svg>
+<svg width="0" height="0" class="hidden">
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 16" id="menu_24px">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z" fill="black"></path>
+  </symbol>
+</svg>
 </svg>

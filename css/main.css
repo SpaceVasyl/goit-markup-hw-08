@@ -21,6 +21,11 @@ img {
 }
 
 button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
   cursor: pointer;
 }
 
@@ -47,7 +52,7 @@ address {
   font-style: normal;
 }
 
-.list {
+li {
   list-style: none;
 }
 
@@ -89,6 +94,16 @@ body {
 .header {
   background-color: rgb(255, 255, 255);
   padding: 16px 15px;
+  position: relative;
+}
+
+.header-box {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
@@ -102,7 +117,102 @@ body {
   color: #2196F3;
 }
 
-.navigation__item::marker {
+.navigation__link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+}
+
+.button-menu {
+  padding: 0;
+  margin-top: 0;
+  display: flex;
+}
+
+.button-menu__icon {
+  display: flex;
+  width: 24px;
+  height: 16px;
+}
+
+.menu {
+  position: absolute;
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  padding: 40px;
+}
+.menu__close {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  top: 21px;
+  right: 25.33px;
+}
+
+.navigation {
+  padding-top: 8px;
+}
+.navigation__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.location {
+  margin-top: 38vw;
+}
+
+.adress-list {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.phone {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.1764705882;
+  letter-spacing: 0.02em;
   color: #2196F3;
-  font-weight: 900;
+}
+
+.mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.menu-sotial {
+  padding-bottom: 0;
+}
+
+.menu-sotial__list {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.menu-sotial__item {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+  position: relative;
+}
+
+.menu-sotial__item:not(:last-child)::after {
+  content: "";
+  width: 1px;
+  height: 22px;
+  background-color: #2196F3;
+  position: absolute;
+  right: -10px;
 }/*# sourceMappingURL=main.css.map */

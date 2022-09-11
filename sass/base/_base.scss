@@ -13,7 +13,6 @@ ol {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
-  
 }
 
 img {
@@ -23,6 +22,11 @@ img {
 }
 
 button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
   cursor: pointer;
 }
 
@@ -39,7 +43,6 @@ button {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
-  
 }
 
 a {
@@ -52,7 +55,7 @@ address {
 }
 
 
-.list {
+li {
   list-style: none;
 }
 

@@ -1,6 +1,15 @@
 .header {
     background-color: rgb(255, 255, 255);
     padding: 16px 15px;
+    position: relative;
+}
+.header-box {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
@@ -10,11 +19,99 @@
     line-height: calc(28/24);
     text-decoration: none;
     &__part--blue {
-        color: #2196F3;
+    color: #2196F3;
     }
 }
 
-.navigation__item::marker {
+.navigation__link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: calc(47/40);
+    letter-spacing: 0.02em;
+}
+.button-menu {
+    padding: 0;
+    margin-top: 0;
+    display: flex;
+}
+
+.button-menu__icon {
+    display: flex;
+    width: 24px;
+    height: 16px;
+}
+
+.menu {
+    position: absolute;
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    padding: 40px;
+    &__close {
+        position: absolute;
+        width: 19px;
+        height: 19px;
+        top: 21px;
+        right: 25.33px;
+    }
+}
+
+.navigation {
+    padding-top: 8px;
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+.location {
+  margin-top: 38vw;
+}
+.adress-list {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.phone {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: calc(40/34);
+    letter-spacing: 0.02em;
     color: #2196F3;
-    font-weight: 900;
+}
+
+.mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: calc(28/24);
+    letter-spacing: 0.02em;
+    color: #757575;
+}
+.menu-sotial {
+    padding-bottom: 0;
+}
+.menu-sotial__list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; 
+}
+.menu-sotial__item {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+    position: relative;
+}
+
+.menu-sotial__item:not(:last-child)::after {
+    content: '';
+    width: 1px;
+    height: 22px;
+    background-color: #2196F3;
+    position: absolute;
+    right: -10px;
 }
