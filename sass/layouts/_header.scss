@@ -55,9 +55,12 @@
         position: absolute;
         width: 19px;
         height: 19px;
-        top: 21px;
-        right: 25.33px;
+        top: 2.6vh;
+        right: 5.2vw;
     }
+}
+.menu__close :active {
+    fill: #2196F3;
 }
 
 .navigation {
@@ -69,7 +72,8 @@
     }
 }
 .location {
-  margin-top: 38vw;
+  height: 67vh;
+  padding-top: 60%;
 }
 .adress-list {
     display: flex;
@@ -89,6 +93,8 @@
     line-height: calc(28/24);
     letter-spacing: 0.02em;
     color: #757575;
+    margin-top: 32px;
+    margin-bottom: 64px;
 }
 .menu-sotial {
     padding-bottom: 0;
@@ -101,7 +107,7 @@
 .menu-sotial__item {
     font-weight: 500;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 1.22;
     letter-spacing: 0.02em;
     color: #2196F3;
     position: relative;
