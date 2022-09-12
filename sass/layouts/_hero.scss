@@ -1,0 +1,33 @@
+.hero {
+    max-width: 100vw;
+    min-height: 50vh;
+    background-color: #c4c4c4;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/team.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-position: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero__title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.button-kn {
+    
+}
