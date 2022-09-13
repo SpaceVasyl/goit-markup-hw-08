@@ -91,6 +91,11 @@ body {
   overflow: hidden;
 }
 
+.conteiner {
+  padding: 0 15px;
+  max-width: 100vw;
+}
+
 .header {
   background-color: rgb(255, 255, 255);
   padding: 16px 15px;
@@ -243,6 +248,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 30px;
 }
 
 .hero__title {
@@ -253,4 +259,35 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+
+.button-kn {
+  background-color: #2196F3;
+  color: #FFFFFF;
+  width: 216px;
+  height: 50px;
+  font-family: "roboto", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+  max-width: 100vw;
+  max-height: 120px;
+  background: #F5F4FA;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  flex-grow: none;
+}
+
+.about__icon {
+  width: 65.32px;
+  height: 70px;
 }/*# sourceMappingURL=main.css.map */
