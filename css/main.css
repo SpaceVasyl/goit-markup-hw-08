@@ -515,6 +515,10 @@ body {
   height: 24px;
 }
 
+.catalog {
+  padding: 0 15px;
+}
+
 .portfolio-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -536,4 +540,29 @@ body {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   margin-bottom: 15px;
   margin-right: 8px;
+}
+
+.card {
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.catalog__subscribe {
+  padding: 20px 24px;
+}
+
+.catalog__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.catalog__type {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  color: #757575;
 }/*# sourceMappingURL=main.css.map */
