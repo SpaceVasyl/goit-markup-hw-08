@@ -1,0 +1,40 @@
+.footer {
+    background-color: #2F303A;
+    padding: 60px 0;
+}
+
+.footer-orig {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-white {
+    color: #fff;
+    font-size: 28px;
+}
+
+.footer__address {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+text-align: center;
+color: rgba(255, 255, 255, 0.6);
+}
+
+.white {
+    color:#fff ;
+}
+
+.footer__icon {
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    fill: #AFB1B8;
+}
+
+.telegram {
+    fill: #fff;
+    width: 24px;
+    height: 24px;
+}
