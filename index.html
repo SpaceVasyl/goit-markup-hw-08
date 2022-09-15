@@ -20,7 +20,7 @@
     <!--Логотип-->
     <div class="header-box">
         <a href="index.html" class="logo"><span class="logo__part--blue">Web</span>Studio</a>
-        <button type="button-menu" aria-label="перемикач мобільного меню" is-open>
+        <button type="button-menu" class="menu-open" aria-label="перемикач мобільного меню" is-open>
            
             <svg class="button-menu__icon">
                 <use  class="icon-menu" href="./images/sprites.svg#menu_24px"></use>
@@ -28,10 +28,12 @@
         </button>
         
     </div>
-    <div class="menu hidden">
-        <svg class="menu__close">
-            <use class="icon-cross" href="./images/sprites.svg#icon-kross"></use>
-        </svg>
+    <div class="menu">
+        <button type="button" class="close-but">
+            <svg class="menu__close">
+                <use class="icon-cross" href="./images/sprites.svg#icon-kross"></use>
+            </svg>
+        </button>
         <nav class="navigation">
             <ul class="navigation__list">
                 <li class="navigation__item">
@@ -476,6 +478,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

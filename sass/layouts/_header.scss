@@ -1,6 +1,6 @@
 .header {
     background-color: rgb(255, 255, 255);
-    padding: 16px 15px;
+    padding: 10px;
     position: relative;
     border-bottom: 1px solid #ECECEC;
 }
@@ -45,22 +45,23 @@
 }
 
 .menu {
-    position: absolute;
+    position: fixed;
     background-color: #fff;
     width: 100vw;
     height: 100vh;
     top: 0;
     left: 0;
     padding: 40px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     &__close {
-        position: absolute;
         width: 19px;
         height: 19px;
-        top: 2.6vh;
-        right: 5.2vw;
     }
 }
-.menu__close :active {
+.close-but:hover .menu__close {
     fill: #2196F3;
 }
 
@@ -72,10 +73,7 @@
         gap: 32px;
     }
 }
-.location {
-  height: 67vh;
-  padding-top: 60%;
-}
+
 .adress-list {
     display: flex;
     flex-direction: column-reverse;
@@ -103,7 +101,8 @@
 .menu-sotial__list {
     display: flex;
     flex-direction: row;
-    gap: 20px; 
+    gap: 20px;
+    flex-wrap: wrap;
 }
 .menu-sotial__item {
     font-weight: 500;
@@ -121,4 +120,23 @@
     background-color: #2196F3;
     position: absolute;
     right: -10px;
+}
+
+.close-but {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+.menu-open {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

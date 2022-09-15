@@ -20,3 +20,9 @@
     padding: 16px 52px;
     margin-top: 30px;
 }
+
+.clients-logo:hover .logo-icon,
+.clients-logo:focus .logo-icon {
+    fill: #2196F3;
+    border-color: #2196F3;
+}
