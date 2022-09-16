@@ -343,6 +343,12 @@ input {
   margin-top: 10px;
 }
 
+.cards {
+  width: 100%;
+  background: #FFFFFF;
+  position: relative;
+}
+
 .team {
   background-color: #F5F4FA;
 }
