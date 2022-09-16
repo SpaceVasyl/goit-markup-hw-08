@@ -653,7 +653,7 @@ input {
 .modal {
   position: fixed;
   width: 450px;
-  min-height: 609px;
+  max-height: 609px;
   background-color: rgb(255, 255, 255);
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.14);
   border-radius: 4px;
@@ -827,35 +827,29 @@ input {
   margin-top: 30px;
 }
 
-.close-modal {
-  position: absolute;
-  top: 8px;
-  right: 8px;
+.modal .close-button {
   border-radius: 50%;
-  border: 1px solid;
-  border-color: rgba(189, 186, 186, 0.8705882353);
-  background-color: rgba(255, 255, 255, 0.8784313725);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
   width: 30px;
   height: 30px;
-  padding: 7px 9px 9px 9px;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
 }
 
-.close-icon-color {
-  width: 11px;
-  height: 11px;
-  fill: rgb(0, 0, 0);
+.modal__close {
+  background-position: center;
+  position: absolute;
+  top: 9px;
+  left: 9px;
 }
 
-.close-modal:hover .close-icon-color,
-.close-modal:focus .close-icon-color {
-  fill: var(--accent-color);
-}
-
-.cover-darkness.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0);
-}
-
-.form .modal-comm:hover,
-.form .modal-comm:focus {
-  border-color: var(--accent-color);
+.close-button:hover .modal__close,
+.close-button:focus .modal__close {
+  fill: #2196F3;
 }/*# sourceMappingURL=main.css.map */
