@@ -554,6 +554,9 @@ input {
 .portfolio-buttons {
   display: flex;
   flex-wrap: wrap;
+  row-gap: 8px;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
 }
 
 .catalog__button {
@@ -569,9 +572,22 @@ input {
   padding: 6px 25px;
   border: 0;
   border-radius: 4px;
+}
+
+.catalog__button:hover,
+.catalog__button:focus {
+  background-color: rgba(33, 150, 243, 0.9);
+  color: #FFFFFF;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  margin-bottom: 15px;
-  margin-right: 8px;
+}
+
+.projects {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
 .card {
