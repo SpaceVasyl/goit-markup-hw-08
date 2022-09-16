@@ -854,11 +854,6 @@ input {
   fill: #2196F3;
 }
 
-.modal-inp:hover + .foc,
-.modal-inp:focus + .foc {
-  background-color: #2196F3;
-}
-
 .lable-check::before {
   content: "";
   display: inline-block;
@@ -902,4 +897,19 @@ input {
   background-size: fill;
   margin-right: 7px;
   margin-top: 4px;
+}
+
+.modal__inp:hover,
+.modal__inp:focus {
+  border-color: #2196F3;
+}
+
+.modal__inp:hover + .foc,
+.modal__inp:focus + .foc {
+  fill: #2196F3;
+}
+
+.modal__comm:hover,
+.modal__comm:focus {
+  border-color: #2196F3;
 }/*# sourceMappingURL=main.css.map */
