@@ -215,3 +215,54 @@
 .close-button:focus .modal__close {
     fill: #2196F3;
 }
+
+
+.modal-inp:hover+.foc ,
+.modal-inp:focus+.foc {
+    background-color: #2196F3;
+}
+
+.lable-check::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 3px;
+    margin-top: 4px;
+    margin-right: 7px;
+    text-align: center;
+    position: relative;
+    bottom: -2px;
+}
+
+.lable-check {
+    display: inline;
+    color: var(--second-text-color-grey);
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14/12);
+    letter-spacing: 0.03em;
+    color: #757575;
+    position: relative;
+}
+
+.agreement {
+    color: #2196F3;
+    text-decoration: underline 1px solid;
+}
+
+
+.check-mod:checked+.lable-check::before {
+    background-color: #2196F3;
+    border: none;
+    background-image: url(../images/Vector\ \(3\).svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: fill;
+    margin-right: 7px;
+    margin-top: 4px;
+}
