@@ -11,9 +11,10 @@
 }
 .about {
     display: flex;
-    flex-direction: column;
-    flex-grow: none;
+    flex-wrap: wrap;
     gap: 30px;
+    justify-content: center;
+    align-items: baseline;
 }
 .about__icon {
     width: 65.32px; 
@@ -40,7 +41,20 @@
 }
 
 .cards {
-    width: 100%;
+    max-width: 354px;
     background: #FFFFFF;
     position: relative;
+    flex-grow: none;
+}
+
+@media (max-width: 768px) {
+    .cards {
+        max-width: 450px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .cards {
+        max-width: 270px;
+    }
 }

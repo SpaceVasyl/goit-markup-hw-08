@@ -318,9 +318,10 @@ input {
 
 .about {
   display: flex;
-  flex-direction: column;
-  flex-grow: none;
+  flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
+  align-items: baseline;
 }
 
 .about__icon {
@@ -348,11 +349,66 @@ input {
 }
 
 .cards {
-  width: 100%;
+  max-width: 354px;
   background: #FFFFFF;
+  position: relative;
+  flex-grow: none;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    max-width: 450px;
+  }
+}
+@media (min-width: 1300px) {
+  .cards {
+    max-width: 270px;
+  }
+}
+.pictures {
+  display: none;
+}
+
+.pictures__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1666666667;
+  text-align: center;
+}
+
+.pictures__list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.pictures__item {
+  width: 370px;
+  height: 294px;
   position: relative;
 }
 
+.pictures__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  height: 70px;
+  padding: 27px 0;
+}
+
+@media (min-width: 1300px) {
+  .pictures {
+    display: block;
+  }
+}
 .team {
   background-color: #F5F4FA;
 }
@@ -420,8 +476,9 @@ input {
 
 .clients-logo-list {
   display: flex;
-  justify-content: space-around;
+  gap: 30px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .logo-icon {
