@@ -2,6 +2,7 @@
     display: none;
 }
 
+
 .pictures__title {
     font-weight: 700;
     font-size: 36px;
@@ -37,7 +38,7 @@
     padding: 27px 0;
 }
 
-@media (min-width: 1300px) {
+@media screen and (min-width: 1300px) {
     .pictures {
         display: block;
     }
