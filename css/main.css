@@ -97,9 +97,18 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 768px) {
+  .conteiner {
+    width: 798px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 @media screen and (min-width: 1300px) {
   .conteiner {
-    width: 1200px;
+    width: 1230px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -295,6 +304,10 @@ input {
   .menu-open {
     display: none;
   }
+}
+
+.active-mob {
+  color: #2196F3;
 }
 
 .active {
@@ -874,6 +887,7 @@ input {
   .projects {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: flex-start;
   }
 }
 
