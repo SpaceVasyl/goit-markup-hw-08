@@ -37,15 +37,22 @@
     justify-content: center;
     gap: 10px;
 }
-.team__icon {
-    width: 44px;
-    height: 44px;
+.social-media {
+    width: fit-content;
+    height: fit-content;
     padding: 12px;
+}
+
+.team__icon {
+    width: 32px;
+    height: 32px;
     fill: #AFB1B8;
 }
 .team__icon:hover ,
 .team__icon:focus {
-    fill: #2196F3;
+    fill: #fff;
+    background-color: #2196F3;
+    border-radius: 50%;
 }
 
 .fourth-list-flex {
