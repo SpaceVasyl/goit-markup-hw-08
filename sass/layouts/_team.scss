@@ -38,22 +38,34 @@
     gap: 10px;
 }
 .social-media {
-    width: fit-content;
-    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 44px;
+    height: 44px;
     padding: 12px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team__icon {
-    width: 32px;
-    height: 32px;
-    fill: #AFB1B8;
+    width: 20px;
+    height: 20px;
+    fill: #afb1b8;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team__icon:hover ,
-.team__icon:focus {
-    fill: #fff;
+.social-media:hover ,
+.social-media:focus  {
     background-color: #2196F3;
     border-radius: 50%;
 }
+
+.social-media:hover .team__icon,
+.social-media:focus .team__icon {
+    fill: #fff;
+}
+
 
 .fourth-list-flex {
     display: flex;

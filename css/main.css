@@ -17,7 +17,7 @@ ol {
 img {
   display: block;
   width: 100%;
-  max-width: 100%;
+  height: auto;
 }
 
 button {
@@ -102,6 +102,15 @@ input {
   outline: none;
 }
 
+@media screen and (min-width: 1200px) {
+  .conteiner {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 .header {
   background-color: rgb(255, 255, 255);
   padding: 10px;
@@ -116,6 +125,19 @@ input {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .header-box {
+    display: flex;
+    min-height: 80px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .header-box {
+    display: flex;
+    min-height: 80px;
+    justify-content: space-around;
+  }
 }
 
 .logo {
@@ -166,6 +188,11 @@ input {
 .menu__close {
   width: 19px;
   height: 19px;
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    display: none;
+  }
 }
 
 .close-but:hover .menu__close {
@@ -251,9 +278,118 @@ input {
   align-items: center;
   justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .menu-open {
+    display: none;
+  }
+}
 
 .active {
   color: #2196F3;
+  position: relative;
+}
+
+.navigation-desctop {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .navigation-desctop {
+    display: flex;
+  }
+}
+
+.adress-desctop {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .adress-desctop {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .adress-desctop {
+    display: flex;
+    flex-direction: row;
+    gap: 31px;
+  }
+}
+
+.adress-desctop-element {
+  display: flex;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.adress-desctop__contact {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.02em;
+  color: #757575;
+  display: flex;
+  justify-content: baseline;
+  gap: 8px;
+  padding-top: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.adress-desctop__convert {
+  width: 14px;
+  height: 10px;
+  fill: #757575;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 2px;
+}
+
+.adress-desctop__phone {
+  width: 10px;
+  height: 14px;
+  fill: #757575;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation-desctop {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.3333333333;
+  letter-spacing: 0.02em;
+}
+
+.navigation-desctop__list {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.active::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  top: 55.7px;
+  left: 0;
+  background-color: #2196F3;
+  position: absolute;
+  border-radius: 4px;
+}
+
+.adress-desctop__contact:hover,
+.adress-desctop__contact:focus {
+  color: #2196F3;
+}
+
+.adress-desctop__contact:hover .adress-desctop__convert,
+.adress-desctop__contact:focus .adress-desctop__convert {
+  fill: #2196F3;
+}
+
+.adress-desctop__contact:hover .adress-desctop__phone,
+.adress-desctop__contact:focus .adress-desctop__phone {
+  fill: #2196F3;
 }
 
 .hero {
@@ -450,26 +586,33 @@ input {
 }
 
 .social-media {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 44px;
+  height: 44px;
   padding: 12px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team__icon {
-  width: 32px;
-  height: 32px;
-  fill: #AFB1B8;
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team__icon:hover,
-.team__icon:focus {
-  fill: #fff;
+.social-media:hover,
+.social-media:focus {
   background-color: #2196F3;
   border-radius: 50%;
+}
+
+.social-media:hover .team__icon,
+.social-media:focus .team__icon {
+  fill: #fff;
 }
 
 .fourth-list-flex {
@@ -570,10 +713,7 @@ input {
   color: #FFFFFF;
 }
 
-.foot-link {
-  width: 44px;
-  height: 44px;
-  padding: 12px;
+.background-color {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }

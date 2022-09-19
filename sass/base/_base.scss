@@ -18,7 +18,7 @@ ol {
 img {
   display: block;
   width: 100%;
-  max-width: 100%;
+  height: auto;
 }
 
 button {
@@ -103,3 +103,14 @@ body {
 input {
   outline: none;
 }
+
+@media  screen and (min-width: 1200px){
+  .conteiner {
+      width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+}
+
