@@ -18,7 +18,18 @@
     @media screen and (min-width:1300px) {
     display: flex;
     min-height: 80px;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 215px;
+    }
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 88px;
+    @media screen and (min-width:1300px){
+    gap: 93px;
     }
 }
 

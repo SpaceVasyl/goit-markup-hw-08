@@ -17,27 +17,31 @@
 <body>
     <header class="header">
         <!--Логотип-->
-        <div class="header-box">
-            <a href="index.html" class="logo"><span class="logo__part--blue">Web</span>Studio</a>
+        <div class="header-box conteiner">
+            <div class="header-wrapper">
+                <a href="index.html" class="logo"><span class="logo__part--blue">Web</span>Studio</a>
+                
+                <nav class="navigation-desctop">
+                    <ul class="navigation-desctop__list list">
+                        <li class="navigation-desctop__item">
+                            <a href="./index.html" class="navigation-desctop__link ">Студія</a>
+                        </li>
+                        <li class="navigation-desctop__item">
+                            <a href="./portfolio.html" class="navigation-desctop__link active">Портфоліо</a>
+                        </li>
+                        <li class="navigation-desctop__item">
+                            <a href="#" class="navigation-desctop__link">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            
             <button type="button-menu" class="menu-open" aria-label="перемикач мобільного меню" is-open>
-    
+            
                 <svg class="button-menu__icon">
                     <use class="icon-menu" href="./images/sprites.svg#menu_24px"></use>
                 </svg>
             </button>
-            <nav class="navigation-desctop">
-                <ul class="navigation-desctop__list list">
-                    <li class="navigation-desctop__item">
-                        <a href="./index.html" class="navigation-desctop__link ">Студія</a>
-                    </li>
-                    <li class="navigation-desctop__item">
-                        <a href="./portfolio.html" class="navigation-desctop__link active">Портфоліо</a>
-                    </li>
-                    <li class="navigation-desctop__item">
-                        <a href="#" class="navigation-desctop__link">Контакти</a>
-                    </li>
-                </ul>
-            </nav>
             <ul class="adress-desctop">
                 <li class="adress-desctop-element">
                     <a href="mailto:info@devstudio.com" class="adress-desctop__contact">
@@ -107,7 +111,7 @@
         </div>
     </header>
     <main>
-        <div class="container">
+        <div class="conteiner">
             <div class="catalog">
         
             <section class="section">
@@ -138,10 +142,10 @@
                 <li class="card">
                     <a href="#" class="catalog__card">
                         <div class="catalog__animation">
-                        <img src="./images/mob/portfolio/neworlean-mob@2x.jpg" alt="Постер New Orlean vs Golden Star" width="370" height="294">
-                        <p class="catalog__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
-                            відвідувачу отримати
-                            вичерпні відомості про компанію чи приватну особу.</p>
+                            <img src="./images/mob/portfolio/neworlean-mob@2x.jpg" alt="Постер New Orlean vs Golden Star" width="370" height="294">
+                            <p class="catalog__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                                відвідувачу отримати
+                                вичерпні відомості про компанію чи приватну особу.</p>
                         </div>
                         <div class="catalog__subscribe">
                             <h2 class="catalog__title">Постер New Orlean vs Golden Star</h2>
@@ -270,28 +274,28 @@
                     <h3 class="footer__title">Приєднуйтесь</h3>
                     <ul class="soshial-icons list">
                         <li class="foot-link">
-                            <a href="#" class="social-media">
+                            <a href="#" class="social-media background-color">
                                 <svg class="footer__icon">
                                     <use href="./images/sprites.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="foot-link">
-                            <a href="#" class="social-media">
+                            <a href="#" class="social-media background-color">
                                 <svg class="footer__icon">
                                     <use href="./images/sprites.svg#icon-twitter"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="foot-link">
-                            <a href="#" class="social-media">
+                            <a href="#" class="social-media background-color">
                                 <svg class="footer__icon">
                                     <use href="./images/sprites.svg#icon-facebook"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="foot-link">
-                            <a href="#" class="social-media">
+                            <a href="#" class="social-media background-color">
                                 <svg class="footer__icon">
                                     <use href="./images/sprites.svg#icon-linkedin"></use>
                                 </svg>
@@ -301,14 +305,14 @@
                 </div>
                 <div class="subscribe">
                     <h3 class="footer__subscribe-title">Підпишіться на розсилку</h3>
-    
-                    <input type="email" name="email-subs" class="footer__input" id="sub-email" placeholder="E-mail">
-                    <button type="submit" class="button-kn">Підписатися
-                        <svg class="icons-color telegram">
-                            <use href="./images/sprites.svg#icon-telegram"></use>
-                        </svg>
-                    </button>
-    
+                    <div class="subscribe-input">
+                        <input type="email" name="email-subs" class="footer__input" id="sub-email" placeholder="E-mail">
+                        <button type="submit" class="button-kn">Підписатися
+                            <svg class="icons-color telegram">
+                                <use href="./images/sprites.svg#icon-telegram"></use>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
