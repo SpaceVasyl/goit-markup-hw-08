@@ -15,7 +15,7 @@
     display: flex;
     min-height: 80px;
     }
-    @media screen and (min-width:1300px) {
+    @media screen and (min-width:1200px) {
     display: flex;
     min-height: 80px;
     justify-content: space-between;
@@ -28,7 +28,7 @@
     flex-direction: row;
     align-items: center;
     gap: 88px;
-    @media screen and (min-width:1300px){
+    @media screen and (min-width:1200px){
     gap: 93px;
     }
 }
@@ -191,7 +191,7 @@
         flex-direction: column;
         gap: 10px;
     }
-    @media screen and (min-width:1300px) {
+    @media screen and (min-width:1200px) {
         display: flex;
         flex-direction: row;
         gap: 31px;

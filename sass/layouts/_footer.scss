@@ -8,7 +8,7 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 60px;
-    @media screen and (min-width:1300px) {
+    @media screen and (min-width:1200px) {
         align-items: baseline;
     }
 }
@@ -126,7 +126,7 @@ color: rgba(255, 255, 255, 0.6);
    } 
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
     .subscribe {
        width: 600px;
     }

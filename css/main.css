@@ -106,7 +106,7 @@ body {
     padding-right: 15px;
   }
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
   .conteiner {
     width: 1230px;
     margin-left: auto;
@@ -141,7 +141,7 @@ input {
     min-height: 80px;
   }
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
   .header-box {
     display: flex;
     min-height: 80px;
@@ -156,7 +156,7 @@ input {
   align-items: center;
   gap: 88px;
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
   .header-wrapper {
     gap: 93px;
   }
@@ -334,7 +334,7 @@ input {
     gap: 10px;
   }
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
   .adress-desctop {
     display: flex;
     flex-direction: row;
@@ -520,7 +520,7 @@ input {
     width: 354px;
   }
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
   .cards {
     width: 270px;
   }
@@ -565,7 +565,7 @@ input {
   padding: 27px 0;
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
   .pictures {
     display: block;
   }
@@ -651,6 +651,12 @@ input {
   font-size: 28px;
   line-height: 1.1785714286;
   text-align: center;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .fourth-sec-head {
+    margin-bottom: 50px;
+  }
 }
 
 .clients-logo-list {
@@ -667,7 +673,18 @@ input {
   border-radius: 4px;
   fill: #AFB1B8;
   padding: 16px 52px;
-  margin-top: 30px;
+}
+@media screen and (min-width: 768px) {
+  .logo-icon {
+    width: 226px;
+    height: 92px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo-icon {
+    width: 170px;
+    height: 92px;
+  }
 }
 
 .clients-logo:hover .logo-icon,
@@ -687,7 +704,7 @@ input {
   justify-content: space-between;
   gap: 60px;
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
   .flex {
     align-items: baseline;
   }
@@ -810,7 +827,7 @@ input {
     width: 100%;
   }
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
   .subscribe {
     width: 600px;
   }
@@ -903,7 +920,7 @@ input {
     height: 440px;
   }
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
   .card {
     width: 370px;
     height: 404px;
@@ -990,7 +1007,7 @@ input {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translate(-50%, -50%) scale(1);
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
   .modal {
     min-width: 528px;
     min-height: 521px;
