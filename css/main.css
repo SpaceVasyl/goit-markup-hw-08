@@ -146,7 +146,7 @@ input {
     display: flex;
     min-height: 80px;
     justify-content: space-between;
-    padding: 0 215px;
+    padding: 0 200px;
   }
 }
 
@@ -467,8 +467,7 @@ input {
 }
 
 .icon {
-  max-width: 100vw;
-  max-height: 120px;
+  max-width: 100%;
   background: #F5F4FA;
   border-radius: 4px;
   display: flex;
@@ -511,22 +510,22 @@ input {
 }
 
 .cards {
-  max-width: 354px;
+  max-width: 450px;
   background: #FFFFFF;
   position: relative;
   flex-grow: none;
 }
+@media screen and (min-width: 768px) {
+  .cards {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .cards {
+    width: 270px;
+  }
+}
 
-@media (max-width: 768px) {
-  .cards {
-    max-width: 450px;
-  }
-}
-@media (min-width: 1300px) {
-  .cards {
-    max-width: 270px;
-  }
-}
 .pictures {
   display: none;
 }
