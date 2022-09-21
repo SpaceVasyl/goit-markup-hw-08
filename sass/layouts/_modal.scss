@@ -247,7 +247,9 @@
   letter-spacing: 0.03em;
   color: #757575;
   position: relative;
-  @media screen and (min-width: jy) {
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
   }
 }
 
