@@ -122,13 +122,11 @@ input {
 
 .header {
   background-color: rgb(255, 255, 255);
-  padding: 10px;
   position: relative;
   border-bottom: 1px solid #ECECEC;
 }
 
 .header-box {
-  width: 100%;
   display: inline-flex;
   align-items: center;
   flex-wrap: wrap;
@@ -146,7 +144,6 @@ input {
     display: flex;
     min-height: 80px;
     justify-content: space-between;
-    padding: 0 200px;
   }
 }
 
@@ -396,7 +393,7 @@ input {
   content: "";
   width: 100%;
   height: 4px;
-  top: 55.7px;
+  top: 45.7px;
   left: 0;
   background-color: #2196F3;
   position: absolute;
@@ -420,11 +417,23 @@ input {
 
 .hero {
   background-color: #c4c4c4;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/mob/studio/header-mob@2x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/tablet/studio/header-tablet@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/desktop/studio/header-desktop@2x.jpg);
+    height: 600px;
+  }
 }
 
 .hero__box {
@@ -433,7 +442,12 @@ input {
   align-items: center;
   flex-direction: column;
   gap: 30px;
-  min-height: 280px;
+  height: 280px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__box {
+    height: 100%;
+  }
 }
 
 .hero__title {
@@ -602,6 +616,19 @@ input {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 24px;
+  max-width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .card-list {
+    width: 354px;
+    height: 536px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card-list {
+    width: 270px;
+    height: 428px;
+  }
 }
 
 .soshial-icons {
@@ -643,7 +670,16 @@ input {
 .fourth-list-flex {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .fourth-list-flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .fourth-sec-head {
@@ -699,6 +735,7 @@ input {
 }
 
 .flex {
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -851,10 +888,6 @@ input {
     align-self: flex-start;
   }
 }
-.catalog {
-  padding: 0 15px;
-}
-
 .portfolio-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -893,26 +926,18 @@ input {
 .projects {
   padding-top: 40px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
-  gap: 30px;
+  justify-content: center;
   flex-grow: none;
-}
-@media screen and (min-width: 768px) {
-  .projects {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .card {
-  max-width: 450px;
-  max-height: 404px;
   background: #FFFFFF;
   border: 1px solid #EEEEEE;
-  position: relative;
+  max-width: 450px;
 }
 @media screen and (min-width: 768px) {
   .card {
@@ -927,12 +952,21 @@ input {
   }
 }
 
-.catalog__card {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .card:last-child {
+    margin-right: 385px;
+  }
+}
+
+.catalog__animation {
   max-width: 450px;
+  max-height: 404px;
+  position: relative;
 }
 
 .catalog__subscribe {
   padding: 20px 24px;
+  position: relative;
 }
 
 .catalog__title {
@@ -953,7 +987,7 @@ input {
   position: absolute;
   top: 0;
   left: 0;
-  max-height: 100%;
+  height: 100%;
   width: 100%;
   font-weight: 400px;
   font-size: 18px;
