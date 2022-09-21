@@ -1,115 +1,105 @@
-
 .portfolio-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 15px;
-    column-gap: 8px;
-    @media screen and (min-width:768px){
-        justify-content: center;
-    }
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  column-gap: 8px;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 .catalog__button {
-    background-color: #F5F4FA;
-    color: rgba(33, 33, 33, 1);
-    height: 38px;
-    font-family: "roboto", sans-serif;
-    font-weight: 500;
-    text-align: center;
-    font-size: 16px;
-    line-height: calc(26/16);
-    letter-spacing: 0.03em;
-    padding: 6px 25px;
-    border: 0;
-    border-radius: 4px;
+  background-color: #f5f4fa;
+  color: rgba(33, 33, 33, 1);
+  height: 38px;
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.03em;
+  padding: 6px 25px;
+  border: 0;
+  border-radius: 4px;
 }
 
-.catalog__button:hover ,
+.catalog__button:hover,
 .catalog__button:focus {
-    background-color: rgba(33, 150, 243, 0.9);
-    color: #FFFFFF;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: rgba(33, 150, 243, 0.9);
+  color: #ffffff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
-
 
 .projects {
-    padding-top: 40px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-grow: none;
-    flex-wrap: wrap;
-    gap: 30px;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  @media screen and (min-width: 768px) {
+    margin-top: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 50px;
+  }
 }
 .card {
-    background: #FFFFFF;
-    border: 1px solid #EEEEEE;
-    max-width: 450px;
-    @media screen and (min-width:768px){
-        width: 354px;
-        height: 440px;
-    }
-    @media screen and(min-width:1200px){
-        width: 370px;
-        height: 404px;
-    }
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  max-width: 450px;
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and(min-width:1200px) {
+    width: 370px;
+  }
 }
-.card:last-child {
-    @media screen and (min-width:768px) and (max-width:1200px){
-        margin-right: 385px;
-    }
-}
+
 .catalog__animation {
-    max-width: 450px;
-    max-height: 404px;
-    position: relative;
+  position: relative;
+  overflow: hidden;
 }
 
-
-.catalog__subscribe{
-    padding: 20px 24px;
-    position: relative;
+.catalog__subscribe {
+  padding: 20px 24px;
 }
 .catalog__title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 
 .catalog__type {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.88;
-    color: #757575;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  color: #757575;
 }
-
 
 .catalog__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    font-weight: 400px;
-    font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-    background-color: rgba(33, 150, 243, 0.9);
-    padding: 63px 24px;
-    opacity: 0;
-    transform: translateY(100%);
-    transition-property: transform, opacity;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  font-weight: 400px;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background-color: rgba(33, 150, 243, 0.9);
+  padding: 63px 24px;
+  transform: translateY(100%);
+  transition-property: transform, opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.card:hover .catalog__overlay {
-    transform: translateY(0);
-    opacity: 100%;
+.catalog__card:hover .catalog__overlay,
+.catalog__card:focus .catalog__overlay {
+  transform: translateY(0);
 }
 
 .card:hover {
-    box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
+    0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }

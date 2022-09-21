@@ -1,40 +1,48 @@
 .fourth-sec-head {
-    font-weight: 700;
-    font-size: 28px;
-    line-height: calc(33/28);
-    text-align: center;
-    margin-bottom: 30px;
-    @media screen and (min-width: 1200px) {
-            margin-bottom: 50px;
-        }
+  font-weight: 700;
+  font-size: 28px;
+  line-height: calc(33 / 28);
+  text-align: center;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
-
+.clients-logo {
+  width: 210px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    width: 226px;
+    height: 92px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+    height: 92px;
+  }
+  &:hover,
+  &:focus {
+    border-color: #2196f3;
+  }
+}
 .clients-logo-list {
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .logo-icon {
-    width: 210px;
-    height: 92px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-    fill: #AFB1B8;
-    padding: 16px 52px;
-    @media screen and (min-width: 768px) {
-        width: 226px;
-        height: 92px;
-    }
-    @media screen and (min-width: 1200px) {
-        width: 170px;
-        height: 92px;
-    }
+  fill: #afb1b8;
+  width: 106px;
+  height: 60px;
 }
 
 .clients-logo:hover .logo-icon,
 .clients-logo:focus .logo-icon {
-    fill: #2196F3;
-    border-color: #2196F3;
+  fill: #2196f3;
 }
